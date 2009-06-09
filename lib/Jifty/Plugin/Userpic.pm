@@ -38,5 +38,16 @@ Jifty::DBI::Schema->register_types(
         sub { _init_handler is \&_userpic,  render_as 'Jifty::Plugin::Userpic::Widget'},
 );
 
+=head1 AUTHOR
+
+Alex Vandiver
+
+=head1 LICENSE
+
+Copyright 2005-2009 Best Practical Solutions, LLC.
+
+This program is free software and may be modified and distributed under the same terms as Perl itself.
+
+=cut
 
 1;
