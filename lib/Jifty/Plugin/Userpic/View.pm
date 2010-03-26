@@ -23,7 +23,7 @@ Outputs the image stored in 'field' of 'item'. (Both of those are set by the dis
 
 template 'userpic/image' => sub {
     my ($item,$field) = get(qw(item field));
-    Jifty->handler->apache->content_type("image/jpeg");
+    Jifty->web->response->content_type('image/jpeg');
     outs_raw($item->$field());
 
 };
